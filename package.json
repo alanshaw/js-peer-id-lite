@@ -3,8 +3,10 @@
   "version": "0.12.2",
   "description": "IPFS Peer Id implementation in Node.js",
   "leadMaintainer": "Pedro Teixeira <i@pgte.me>",
-  "main": "src/main.js",
-  "browser": "src/main.browser.js",
+  "main": "src/index.js",
+  "browser": {
+    "src/main.js": "src/main.browser.js"
+  },
   "scripts": {
     "lint": "aegir lint",
     "build": "aegir build",
