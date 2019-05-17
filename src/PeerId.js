@@ -1,7 +1,3 @@
-/*
- * Id is an object representation of a peer Id. a peer Id is a multihash
- */
-
 'use strict'
 
 const mh = require('multihashes')
@@ -140,6 +136,7 @@ class _PeerId {
 const PeerId = withIs(_PeerId, { className: 'PeerId', symbolName: '@libp2p/js-peer-id/PeerId' })
 
 // FIXME: this overwrites withIs
+// https://github.com/libp2p/js-peer-id/issues/88
 PeerId.isPeerId = function (peerId) {
   return Boolean(typeof peerId === 'object' &&
     peerId._id &&
