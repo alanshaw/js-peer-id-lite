@@ -5,7 +5,7 @@
   "leadMaintainer": "Pedro Teixeira <i@pgte.me>",
   "main": "src/index.js",
   "browser": {
-    "src/main.js": "src/main.browser.js"
+    "./src/main.js": "./src/main.browser.js"
   },
   "scripts": {
     "lint": "aegir lint",
